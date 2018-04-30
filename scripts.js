@@ -11,6 +11,7 @@ function getUser(user,password){
                 if (users[key].user_id === user_id.value && users[key].password === password) {
                     document.cookie = "id="+key;
                     window.open("/wall.html","_self");
+                    return false;
                 }
             }   
             var pwdErrorMsg = document.getElementById("pwd_error");
