@@ -35,6 +35,7 @@ function getPosts(){
     if (this.readyState == 4 && this.status == 200) {
         posts = JSON.parse(this.responseText);
         allPosts()
+        return false;
         }
     }
     httpRequest.open ("GET", url);
@@ -94,7 +95,7 @@ function allPosts(filter=null){
                 divPosts.appendChild(divPost);
             }
         }
-  
+    return false;
     }
 
 }
