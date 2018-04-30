@@ -13,9 +13,9 @@ function getUser(user,password){
                     window.open("/wall.html","_self");
                 }
             }   
-            var msgErroSenha = document.getElementById("pwd_error");
-            msgErroSenha.innerHTML = "";  
-            msgErroSenha.innerHTML = "e-mail ou senha inválidos";
+            var pwdErrorMsg = document.getElementById("pwd_error");
+            pwdErrorMsg.innerHTML = "";  
+            pwdErrorMsg.innerHTML = "e-mail ou senha inválidos";
             return false;    
         }
     }
